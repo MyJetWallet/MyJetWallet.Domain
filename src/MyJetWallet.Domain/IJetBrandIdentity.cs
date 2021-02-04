@@ -4,7 +4,7 @@ namespace MyJetWallet.Domain
 {
     public interface IJetBrandIdentity : IJetBrokerIdentity
     {
-        string BrandId { get; set; }
+        string BrandId { get; }
     }
 
     [DataContract]
