@@ -8,23 +8,28 @@ namespace MyJetWallet.Domain
     }
 
     [DataContract]
-    public class JetClientIdentity : JetBrandIdentity, IJetClientIdentity
+    public class JetClientIdentity : IJetClientIdentity
     {
         public JetClientIdentity()
         {
         }
 
-        public JetClientIdentity(string brokerId, string brandId, string clientId) : base(brokerId, brandId)
+        public JetClientIdentity(string brokerId, string brandId, string clientId)
         {
+            BrokerId = brokerId;
+            BrandId  = brandId;
             ClientId = clientId;
         }
 
-        [DataMember(Order = 3)]
-        public string ClientId { get; set; }
+        [DataMember(Order = 1)] public string BrokerId { get; set; }
+        [DataMember(Order = 2)] public string BrandId { get; set; }
+        [DataMember(Order = 3)] public string ClientId { get; set; }
 
         public override string ToString()
         {
             return $"{BrokerId}::{BrandId}::{ClientId}";
         }
+
+        
     }
 }

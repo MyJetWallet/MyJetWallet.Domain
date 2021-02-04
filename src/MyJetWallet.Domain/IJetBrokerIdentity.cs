@@ -27,7 +27,7 @@ namespace MyJetWallet.Domain
         {
             return new JetBrokerIdentity()
             {
-                BrokerId = BrokerId
+                BrokerId = brokerId
             };
         }
 
