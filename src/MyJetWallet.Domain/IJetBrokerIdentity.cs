@@ -30,5 +30,10 @@ namespace MyJetWallet.Domain
                 BrokerId = BrokerId
             };
         }
+
+        public override string ToString()
+        {
+            return $"{BrokerId}";
+        }
     }
 }

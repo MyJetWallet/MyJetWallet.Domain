@@ -10,6 +10,15 @@ namespace MyJetWallet.Domain
     [DataContract]
     public class JetBrandIdentity : JetBrokerIdentity, IJetBrandIdentity
     {
+        public JetBrandIdentity()
+        {
+        }
+
+        public JetBrandIdentity(string brokerId, string brandId) : base(brokerId)
+        {
+            BrandId = brandId;
+        }
+
         [DataMember(Order = 2)]
         public string BrandId { get; set; }
 
@@ -31,5 +40,9 @@ namespace MyJetWallet.Domain
             };
         }
 
+        public override string ToString()
+        {
+            return $"{BrokerId}::{BrandId}";
+        }
     }
 }
