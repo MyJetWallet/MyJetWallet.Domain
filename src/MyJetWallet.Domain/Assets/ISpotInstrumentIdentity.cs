@@ -14,9 +14,9 @@ namespace MyJetWallet.Domain.Assets
     public class SpotInstrumentIdentity : ISpotInstrumentIdentity
     {
         [DataMember(Order = 1)]
-        public string BrokerId { get; }
+        public string BrokerId { get; set; }
 
         [DataMember(Order = 2)]
-        public string Symbol { get; }
+        public string Symbol { get; set; }
     }
 }
