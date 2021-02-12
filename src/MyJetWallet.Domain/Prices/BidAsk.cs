@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace MyJetWallet.Domain.Prices
 {
     [DataContract]
-    public class AskBid
+    public class BidAsk
     {
         [DataMember(Order = 1)]
         public string Id { get; set; }
