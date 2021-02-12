@@ -13,10 +13,10 @@ namespace MyJetWallet.Domain.Prices
         public DateTime DateTime { get; set; }
 
         [DataMember(Order = 3)]
-        public double Bid { get; set; }
+        public decimal Bid { get; set; }
 
         [DataMember(Order = 4)]
-        public double Ask { get; set; }
+        public decimal Ask { get; set; }
 
         [DataMember(Order = 5)]
         public string LiquidityProvider { get; set; }
