@@ -38,5 +38,8 @@ namespace MyJetWallet.Domain.Orders
 
         [DataMember(Order = 11)]
         public OrderStatus Status { get; set; }
+
+        [DataMember(Order = 12)]
+        public long LastSequenceId { get; set; }
     }
 }
