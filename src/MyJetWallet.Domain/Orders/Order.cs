@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace MyJetWallet.Domain.Orders
 {
     [DataContract]
-    public class LimitOrder
+    public class Order
     {
         [DataMember(Order = 1)]
         public string OrderId { get; set; }
