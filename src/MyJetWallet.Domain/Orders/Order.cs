@@ -19,13 +19,13 @@ namespace MyJetWallet.Domain.Orders
         public OrderSide Direction { get; set; }
 
         [DataMember(Order = 5)]
-        public decimal Price { get; set; }
+        public double Price { get; set; }
 
         [DataMember(Order = 6)]
-        public decimal Volume { get; set; }
+        public double Volume { get; set; }
 
         [DataMember(Order = 7)]
-        public decimal FilledVolume { get; set; }
+        public double FilledVolume { get; set; }
 
         [DataMember(Order = 8)]
         public DateTime CreatedTime { get; set; }
