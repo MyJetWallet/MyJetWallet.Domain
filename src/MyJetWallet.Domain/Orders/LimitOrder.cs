@@ -10,36 +10,33 @@ namespace MyJetWallet.Domain.Orders
         public string OrderId { get; set; }
 
         [DataMember(Order = 2)]
-        public string WalletId { get; set; }
-
-        [DataMember(Order = 3)]
         public OrderType Type { get; set; }
 
-        [DataMember(Order = 4)]
+        [DataMember(Order = 3)]
         public string InstrumentSymbol { get; set; }
 
-        [DataMember(Order = 5)]
+        [DataMember(Order = 4)]
         public OrderSide Direction { get; set; }
 
-        [DataMember(Order = 6)]
+        [DataMember(Order = 5)]
         public decimal Price { get; set; }
 
-        [DataMember(Order = 7)]
+        [DataMember(Order = 6)]
         public decimal Volume { get; set; }
 
-        [DataMember(Order = 8)]
+        [DataMember(Order = 7)]
         public decimal FilledVolume { get; set; }
 
-        [DataMember(Order = 9)]
+        [DataMember(Order = 8)]
         public DateTime CreatedTime { get; set; }
 
-        [DataMember(Order = 10)]
+        [DataMember(Order = 9)]
         public DateTime LastUpdate { get; set; }
 
-        [DataMember(Order = 11)]
+        [DataMember(Order = 10)]
         public OrderStatus Status { get; set; }
 
-        [DataMember(Order = 12)]
+        [DataMember(Order = 11)]
         public long LastSequenceId { get; set; }
     }
 }
