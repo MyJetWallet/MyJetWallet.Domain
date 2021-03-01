@@ -12,13 +12,14 @@ namespace MyJetWallet.Domain.Prices
         [DataMember(Order = 2)]
         public DateTime DateTime { get; set; }
 
-        [DataMember(Order = 3)]
-        public double Price { get; set; }
-
-        [DataMember(Order = 4)]
-        public double Volume { get; set; }
-
         [DataMember(Order = 5)]
         public string LiquidityProvider { get; set; }
+
+        [DataMember(Order = 6)]
+        public double Price { get; set; }
+
+        [DataMember(Order = 7)]
+        public double Volume { get; set; }
+
     }
 }
